@@ -1,0 +1,140 @@
+* {
+  background-color: #c6bd9a;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  padding-left: 5%;
+  padding-block: 4px;
+  color: #d78f23;
+  text-shadow: 1px 1px black;
+  background-color: #66431b;
+  border-block: 1px solid black;
+}
+
+/* Header */
+h1 {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  background-color: #a6700a;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  padding-block: 8px;
+  border-bottom: 1px solid black;
+}
+.headerSpace {
+  padding-block: 21px;
+}
+
+/* Back ground */
+
+/* Cat Photo section */
+.catPhotos p {
+  text-align: center;
+  font-size: 16px;
+  margin-block: 15px;
+}
+.catPhotos .p-2 {
+  padding-left: 0;
+  text-align: center;
+  font-size: 14px;
+  margin-block: 10px 30px;
+}
+.catPhotos .images {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-inline: 10%;
+  padding: 2px;
+  background-color: black;
+  border-radius: 20px;
+  box-shadow: 4px 4px #6a5b4f;
+}
+.catPhotos .images img {
+  width: 400px;
+  aspect-ratio: 1 / 0.6;
+  object-fit: cover;
+}
+.catPhotos .img-1 {
+  border-top-left-radius: 18px;
+}
+.catPhotos .img-2 {
+  border-top-right-radius: 18px;
+}
+.catPhotos .img-3 {
+  border-bottom-left-radius: 18px;
+}
+.catPhotos .img-4 {
+  border-bottom-right-radius: 18px;
+}
+
+/* Cat Lists */
+.cat-lists h3 {
+  font-size: 18px;
+  margin-left: 10%;
+  margin-top: 10px;
+}
+.cat-lists ul {
+  font-size: 16px;
+  margin-left: 20%;
+  margin-block: 5px;
+}
+.cat-lists figure {
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.cat-lists img {
+  outline: 2px solid black;
+  width: 100%;
+  aspect-ratio: 1 / 0.6;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-top: 10px;
+  box-shadow: 4px 4px #6a5b4f;
+}
+.cat-lists figcaption {
+  margin-top: 5px;
+}
+
+/* Cat Form */
+.form h2 {
+  text-align: left;
+}
+.form {
+  text-align: center;
+}
+.form fieldset {
+  margin-block: 20px;
+}
+.form legend {
+  font-size: 17px;
+}
+
+.form input {
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.form .submition {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+.form button {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+/* Footer */
+footer p,
+footer a {
+  text-align: center;
+  background-color: #a6700a;
+  padding-block: 4px;
+  font-size: 15px;
+}
