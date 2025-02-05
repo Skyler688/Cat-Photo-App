@@ -11,7 +11,7 @@
     <main>
       <h1>CatPhotoApp</h1>
       <div class="headerSpace"></div>
-      <section class="catPhotos">
+      <section class="cat-photos">
         <h2>Cat Photos</h2>
         <p>
           Everyone loves
@@ -37,37 +37,41 @@
           in our gallery.
         </p>
       </section>
+      <h2>Cat Lists</h2>
       <section class="cat-lists">
-        <h2>Cat Lists</h2>
-        <h3>Things cats love:</h3>
-        <ul>
-          <li>Cat nip</li>
-          <li>Laser pointers</li>
-          <li>Lasagna</li>
-        </ul>
-        <figure>
-          <img
-            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
-            alt="A slice of lasagna on a plate."
-          />
-          <figcaption>Cats <em>love</em> lasagna.</figcaption>
-        </figure>
-        <h3>Top 3 things cats hate:</h3>
-        <ul>
-          <li>flea treatment</li>
-          <li>thunder</li>
-          <li>other cats</li>
-        </ul>
-        <figure>
-          <img
-            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
-            alt="Five cats looking around a field."
-          />
-          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
-        </figure>
+        <div class="love">
+          <h3>Things cats love:</h3>
+          <ul>
+            <li>Cat nip</li>
+            <li>Laser pointers</li>
+            <li>Lasagna</li>
+          </ul>
+          <figure>
+            <img
+              src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+              alt="A slice of lasagna on a plate."
+            />
+            <figcaption>Cats <em>love</em> lasagna.</figcaption>
+          </figure>
+        </div>
+        <div class="hate">
+          <h3>Top 3 things cats hate:</h3>
+          <ul>
+            <li>Flea treatment</li>
+            <li>Thunder</li>
+            <li>Other cats</li>
+          </ul>
+          <figure>
+            <img
+              src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+              alt="Five cats looking around a field."
+            />
+            <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+          </figure>
+        </div>
       </section>
+      <h2>Cat Form</h2>
       <section class="form">
-        <h2>Cat Form</h2>
         <form action="https://freecatphotoapp.com/submit-cat-photo">
           <fieldset>
             <legend>Is your cat an indoor or outdoor cat?</legend>
@@ -111,14 +115,16 @@
             />
             <label for="energetic">Energetic</label>
           </fieldset>
-          <input
-            class="submition"
-            type="text"
-            name="catphotourl"
-            placeholder="cat photo URL"
-            required
-          />
-          <button type="submit">Submit</button>
+          <div>
+            <input
+              class="submition"
+              type="text"
+              name="catphotourl"
+              placeholder="cat photo URL"
+              required
+            />
+            <button type="submit">Submit</button>
+          </div>
         </form>
       </section>
     </main>

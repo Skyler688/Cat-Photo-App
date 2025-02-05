@@ -9,6 +9,7 @@ h2 {
   font-size: 25px;
   padding-left: 5%;
   padding-block: 4px;
+  margin-bottom: 10px;
   color: #d78f23;
   text-shadow: 1px 1px black;
   background-color: #66431b;
@@ -25,27 +26,27 @@ h1 {
   text-align: center;
   font-size: 24px;
   padding-block: 8px;
-  border-bottom: 1px solid black;
+  border-block: 1px solid black;
 }
 .headerSpace {
-  padding-block: 21px;
+  padding-block: 22px;
 }
 
 /* Back ground */
 
 /* Cat Photo section */
-.catPhotos p {
+.cat-photos p {
   text-align: center;
   font-size: 16px;
   margin-block: 15px;
 }
-.catPhotos .p-2 {
+.cat-photos .p-2 {
   padding-left: 0;
   text-align: center;
   font-size: 14px;
   margin-block: 10px 30px;
 }
-.catPhotos .images {
+.cat-photos .images {
   display: grid;
   grid-template-columns: 50% 50%;
   margin-inline: 10%;
@@ -54,21 +55,21 @@ h1 {
   border-radius: 20px;
   box-shadow: 4px 4px #6a5b4f;
 }
-.catPhotos .images img {
-  width: 400px;
+.cat-photos .images img {
+  width: 500px;
   aspect-ratio: 1 / 0.6;
   object-fit: cover;
 }
-.catPhotos .img-1 {
+.cat-photos .img-1 {
   border-top-left-radius: 18px;
 }
-.catPhotos .img-2 {
+.cat-photos .img-2 {
   border-top-right-radius: 18px;
 }
-.catPhotos .img-3 {
+.cat-photos .img-3 {
   border-bottom-left-radius: 18px;
 }
-.catPhotos .img-4 {
+.cat-photos .img-4 {
   border-bottom-right-radius: 18px;
 }
 
@@ -104,9 +105,6 @@ h1 {
 }
 
 /* Cat Form */
-.form h2 {
-  text-align: left;
-}
 .form {
   text-align: center;
 }
@@ -116,7 +114,6 @@ h1 {
 .form legend {
   font-size: 17px;
 }
-
 .form input {
   margin-bottom: 15px;
   margin-top: 10px;
@@ -135,6 +132,129 @@ footer p,
 footer a {
   text-align: center;
   background-color: #a6700a;
-  padding-block: 4px;
+  padding-block: 8px;
   font-size: 15px;
+  border-block: 1px solid black;
+}
+
+/* Resposive desine */
+@media screen and (min-width: 600px) {
+  h2 {
+    font-size: 30px;
+  }
+  .cat-photos p {
+    font-size: 18px;
+  }
+  .cat-photos .p-2 {
+    font-size: 15px;
+  }
+  .cat-lists h3 {
+    font-size: 22px;
+  }
+  .cat-lists li {
+    font-size: 18px;
+  }
+  .cat-lists figcaption {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 800px) {
+  h2 {
+    font-size: 35px;
+    border-block: 1.5px solid black;
+    text-shadow: 2px 2px black;
+  }
+  .cat-photos .images {
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-inline: 5%;
+  }
+  .cat-photos .images img {
+    aspect-ratio: 1 / 1;
+  }
+  .cat-photos .img-1 {
+    border-bottom-left-radius: 20px;
+  }
+  .cat-photos .img-2 {
+    border-top-right-radius: 0px;
+  }
+  .cat-photos .img-3 {
+    border-bottom-left-radius: 0px;
+  }
+  .cat-photos .img-4 {
+    border-top-right-radius: 20px;
+  }
+  .cat-lists {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .form legend {
+    font-size: 24px;
+  }
+  .form label {
+    font-size: 20px;
+  }
+  .form .submition,
+  .form button {
+    font-size: 22px;
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h2 {
+    font-size: 45px;
+  }
+  .cat-photos p {
+    font-size: 22px;
+  }
+  .cat-photos .p-2 {
+    font-size: 18px;
+  }
+  .cat-lists h3 {
+    font-size: 28px;
+  }
+  .cat-lists li {
+    font-size: 22px;
+  }
+  .cat-lists figcaption {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  h2 {
+    font-size: 50px;
+  }
+  .cat-photos p {
+    font-size: 26px;
+  }
+  .cat-photos .p-2 {
+    font-size: 22px;
+  }
+  .cat-lists h3 {
+    font-size: 32px;
+  }
+  .cat-lists li {
+    font-size: 28px;
+  }
+  .cat-lists figcaption {
+    font-size: 24px;
+  }
+  .form legend {
+    font-size: 30px;
+  }
+  .form label {
+    font-size: 26px;
+  }
+  .form form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .form .submition,
+  .form button {
+    margin-bottom: 15px;
+    font-size: 26px;
+  }
+  footer {
+    margin-top: 25px;
+  }
 }
